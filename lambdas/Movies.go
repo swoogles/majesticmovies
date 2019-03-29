@@ -71,7 +71,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	fmt.Println("movieToken:" + openMoviesDbToken)
 
 	movieApi := MovieApi{ "https://www.omdbapi.com/?apikey=" + openMoviesDbToken}
-	fmt.Println(serializeMovie(movieApi.MovieData("tt0480249"))
+	fmt.Println(serializeMovie(movieApi.MovieData("tt0480249")))
 
 	fullLineupData :=
         "[" +
