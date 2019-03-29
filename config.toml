@@ -16,3 +16,7 @@ theme = "mediumish"
     identifier = "separate"
     url = "/landing"
 
+[build]
+publish = "public"
+command = "hugo"
+
