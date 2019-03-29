@@ -74,7 +74,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 
 	fullLineupData :=
         "[" +
-		serializeMovie(movieApi.MovieData("tt4154664")) + ",\n" +
+		serializeMovie(movieApi.MovieData("tt0480249")) + ",\n" +
 			serializeMovie(movieApi.MovieData("tt2386490")) + ",\n" +
 		serializeMovie(movieApi.MovieData("tt6857112")) +
 		"]"
