@@ -1,0 +1,7 @@
+    <ul>
+    {{ range .Site.Data.march_movie_data }}
+        <li>
+        {{ partial "layout/movie.html" . }}
+        </li>
+    {{ end }}
+    </ul>

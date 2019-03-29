@@ -1,0 +1,18 @@
+baseURL = "http://example.org/"
+
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "mediumish"
+
+## Main Menu
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "Landing"
+    weight = 100
+    identifier = "separate"
+    url = "/landing"
+

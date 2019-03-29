@@ -1,0 +1,7 @@
+
+  <p>{{.Title}}<p>
+  <p>{{.Rated}}<p>
+  <p>{{.Runtime}}<p>
+    {{ if .public }}
+      <li><a href="{{ .html_url }}" target="_blank">{{ .description }}</a></li>
+    {{ end }}

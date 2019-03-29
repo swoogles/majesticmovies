@@ -1,0 +1,58 @@
+[
+  {
+    "Title": "Captain Marvel",
+    "Rated": "PG-13",
+    "Runtime": "124 min",
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Director": "Anna Boden, Ryan Fleck",
+    "Plot": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "6.9/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "79%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "65/100"
+      }
+    ]
+  },
+  {
+    "Title": "How to Train Your Dragon: The Hidden World",
+    "Rated": "PG",
+    "Runtime": "104 min",
+    "Genre": "Animation, Action, Adventure, Comedy, Family, Fantasy",
+    "Director": "Dean DeBlois",
+    "Plot": "When Hiccup discovers Toothless isn't the only Night Fury, he must seek \"The Hidden World\", a secret Dragon Utopia before a hired tyrant named Grimmel finds it first.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjIwMDIwNjAyOF5BMl5BanBnXkFtZTgwNDE1MDc2NTM@._V1_SX300.jpg",
+    "Ratings": [
+      {
+        "Source": "Internet Movie Database",
+        "Value": "7.9/10"
+      },
+      {
+        "Source": "Rotten Tomatoes",
+        "Value": "91%"
+      },
+      {
+        "Source": "Metacritic",
+        "Value": "71/100"
+      }
+    ]
+  },
+  {
+    "Title": "Us",
+    "Rated": "R",
+    "Runtime": "120 min",
+    "Genre": "Horror, Thriller",
+    "Director": "Jordan Peele",
+    "Plot": "A family's serenity turns to chaos when a group of doppelgängers begin to terrorize them.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZTliNWJhM2YtNDc1MC00YTk1LWE2MGYtZmE4M2Y5ODdlNzQzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_SX300.jpg",
+    "Ratings": []
+  }
+]
