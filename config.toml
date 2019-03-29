@@ -20,3 +20,6 @@ theme = "mediumish"
 publish = "public"
 command = "hugo"
 
+
+[build.environment]
+HUGO_VERSION = "0.47"
