@@ -45,10 +45,6 @@ type MovieApi struct {
 	baseUrl string
 }
 func (e MovieApi) MovieData(movieId string) Movie {
-	//e.baseUrl +
-
-	//"https://www.omdbapi.com/?t=captain+marvel&apikey=2fcf7ca6"
-
 	guardiansOfTheGalaxy2Url := e.baseUrl + "&i=" + movieId
 	movieRequest, _ := http.NewRequest(
 		"GET",
