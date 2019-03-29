@@ -1,5 +1,7 @@
     <ul>
-    {{ range .Site.Data.march_movie_data }}
+        {{ $moviesJ := getJSON ".netlify/functions/movies-lambda" }}
+
+        {{ range $moviesJ }}
         <li>
         {{ partial "layout/movie.html" . }}
         </li>
