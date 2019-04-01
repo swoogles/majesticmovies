@@ -20,6 +20,8 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	bodyRequest := BodyRequest{
 		RequestStripeToken: "",
 	}
+	fmt.Println("I don't know how to handle the following body:")
+	fmt.Println(request.Body)
 	err := json.Unmarshal([]byte(request.Body), &bodyRequest)
 	if err != nil {
 		return &events.APIGatewayProxyResponse{
