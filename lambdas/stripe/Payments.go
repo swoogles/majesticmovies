@@ -6,10 +6,29 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/stripe/stripe-go/charge"
 	"os"
+	"encoding/json"
 	"github.com/stripe/stripe-go"
 )
 
+type BodyRequest struct {
+	RequestStripeToken string `json:"stripeToken"`
+}
+
 func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
+
+
+	bodyRequest := BodyRequest{
+		RequestStripeToken: "",
+	}
+	err := json.Unmarshal([]byte(request.Body), &bodyRequest)
+	if err != nil {
+		return &events.APIGatewayProxyResponse{
+			StatusCode: 400,
+			Body:       "BAD REQUEST!!",
+		}, nil
+	}
+	fmt.Println(bodyRequest.RequestStripeToken)
+
 
 	for k, v := range  request.MultiValueHeaders{
 		fmt.Printf("key[%s] value[%s]\n", k, v)
