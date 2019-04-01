@@ -3,4 +3,4 @@ build:
 	mkdir -p functions
 	# go get ./...
 	go build -o functions/movies-lambda  ./lambdas
-	go build -o functions/submitStripeCharge  ./lambdas/stripe
+	go build -o functions/submit-stripe-charge  ./lambdas/stripe
