@@ -5,7 +5,7 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/stripe/stripe-go/charge"
-	//"os" use to get stripe.Key
+	"os"
 	"github.com/stripe/stripe-go"
 )
 
@@ -14,7 +14,8 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	for k, v := range  request.MultiValueHeaders{
 		fmt.Printf("key[%s] value[%s]\n", k, v)
 	}
-	stripe.Key = "SOME FAKE KEY HERE"
+	stripe.Key = os.Getenv("STRIPE_KEY")
+	fmt.Println("Stripe Key: " + stripe.Key)
 
 	// Token is created using Checkout or Elements!
 	// Get the payment token ID submitted by the form:
