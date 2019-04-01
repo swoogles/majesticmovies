@@ -18,11 +18,12 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	m, _ := url.ParseQuery(request.Body)
 	token := m.Get("stripeToken")
 
-	stripe.Key = os.Getenv("STRIPE_PRIVATE_KEY")
+	stripe.Key = os.Getenv("STRIPE_SECRET_KEY")
 
 	// Token is created using Checkout or Elements!
 	// Get the payment token ID submitted by the form:
 
+	// TODO consider example code here: https://github.com/stripe/stripe-go#without-a-client
 	params := &stripe.ChargeParams{
 		Amount: stripe.Int64(999),
 		Currency: stripe.String(string(stripe.CurrencyUSD)),
