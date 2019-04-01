@@ -1,6 +1,6 @@
 
 
-<form action="/your-server-side-code" method="POST">
+<form action="/.netlify/functions/submit-stripe-charge" method="POST">
     <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key={{ getenv "STRIPE_TOKEN" }}
