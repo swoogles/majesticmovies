@@ -14,7 +14,7 @@ func handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 	for k, v := range  request.MultiValueHeaders{
 		fmt.Printf("key[%s] value[%s]\n", k, v)
 	}
-	stripe.Key = "sk_test_Q4XzL9P1yFL30bNG4ShN772I000HboW9Kr"
+	stripe.Key = "SOME FAKE KEY HERE"
 
 	// Token is created using Checkout or Elements!
 	// Get the payment token ID submitted by the form:
